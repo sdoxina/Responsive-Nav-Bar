@@ -1,9 +1,10 @@
 .navbar{
     background-color: #fff;
-    height: 80;
+    height: 80px;
     margin: 20px;
     border-radius: 16px;
     padding: 0.5rem;
+
 }
 
 .navbar-brand{
@@ -11,60 +12,59 @@
     color: #009970;
     font-size: 24px;
     transition: 0.3s color;
+
 }
 
-.login-button{
+.login-button {
     background-color: #009970;
-    color: #fff;
+    color: #FFFF;
     font-size: 14px;
     padding: 8px 20px;
     border-radius: 50px;
-    text-decoration: none;
     transition: 0.3s background-color;
-}
-
-.login-button:hover{
-    background-color: #00b383;
-}
-
-.navbar-toggler{
+  }
+  
+  .login-button.login-button:hover{
+  background-color: #00b383;
+  }
+  
+  .navbar-toggler{
     border: none;
     font-size: 1.5rem;
-}
+  }
 
-.navbar-toggler:focus, .btn-close:focus{
+  .navbar-toggler:focus, .btn-close:focus{
     box-shadow: none;
     outline: none;
-}
+  }
 
-.nav-link{
+  .nav-link{
     color: #666777;
     font-weight: 500;
-}
+    position: relative;
+  }
 
-.nav-link:hover, .nav-link.active:hover{
+  .nav-link:hover, .nav-link.active:hover{
     color: #000;
-}
-
-@media (min-width:991px){
-
-.nav-link::before{
+  }
+  @media(min-width:991px){
+  .nav-link::before{
     content: "";
     position: absolute;
     bottom: 0;
     left: 50;
-    transform: translate(-50%);
+    transform: translateX(-50%);
     width: 0;
     height: 2px;
     background-color: #009970;
     visibility: hidden;
     transition: 0.3s ease-in-out;
-}
+  }
 
-.nav-link:hover::before, .nav-link.active:hover::before{
+  .nav-link:hover::before, .nav-link.active:hover::before{
     width: 100%;
     visibility: visible;
-}
+  }
 }
 
 .hero-section{
@@ -75,8 +75,8 @@
 }
 
 .hero-section::before{
-    background-color: rgba(0, 0, 0, 0.6);
-    content: "";
+    background-color: rgba(0,0,0,0.6);
+    content:"";
     position: absolute;
     top: 0;
     right: 0;
@@ -88,8 +88,10 @@
     height: 100vh;
     z-index: 1;
     position: relative;
+
 }
 
 .hero-section h1{
     font-size: 1.5em;
+    
 }
